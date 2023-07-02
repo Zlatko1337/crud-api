@@ -1,0 +1,39 @@
+1. create product
+POST http://localhost:8080/api/v1/products/
+{
+    "code": "xcvtfsia13",
+    "name": "cipele",
+    "priceEur": 1,
+    "description": "specijalna ponuda",
+    "available": true
+}
+
+
+2. update product
+PUT http://localhost:8080/api/v1/products/1
+{
+    "code": "xcvtfsia13",
+    "name": "cipele",
+    "priceEur": 1,
+    "description": "specijalna ponuda",
+    "available": true
+}
+
+
+3. get all products
+GET http://localhost:8080/api/v1/products/
+
+
+4. get product by id 
+GET http://localhost:8080/api/v1/products/1
+
+
+5. delete all products
+DELETE http://localhost:8080/api/v1/products/
+
+
+6. delete product by id
+DELETE http://localhost:8080/api/v1/products/1
+
+
+
