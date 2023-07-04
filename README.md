@@ -52,3 +52,5 @@
 	4.Tests
 	5.Documentation (Swagger)
 	6.Docker
+	7.Authentication
+	8.Actuator
