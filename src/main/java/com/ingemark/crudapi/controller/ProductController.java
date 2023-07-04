@@ -1,6 +1,7 @@
 package com.ingemark.crudapi.controller;
 
 import java.util.List;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -12,9 +13,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.ingemark.crudapi.dto.ProductRequest;
 import com.ingemark.crudapi.entity.Product;
-import com.ingemark.crudapi.service.ProductServiceImpl;
+import com.ingemark.crudapi.service.ProductService;
+
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
@@ -23,7 +26,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ProductController {
 
-	private final ProductServiceImpl productService;
+	private final ProductService productService;
 
 	@GetMapping("/")
 	public ResponseEntity<List<Product>> getProducts() {
